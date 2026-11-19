@@ -8,6 +8,20 @@ WordPressを使用して制作した
 Web制作の学習記録や制作実績を紹介するために、
 WordPressのオリジナルテーマを制作しました。
 
+## スクリーンショット
+
+### トップページ
+
+![トップページ](screenshots/home.png)
+
+### 自己紹介ページ
+
+![自己紹介ページ](screenshots/about.png)
+
+### お問い合わせページ
+
+![お問い合わせページ](screenshots/contact.png)
+
 ## 使用技術
 
 - HTML5
