@@ -1,0 +1,953 @@
+
+/*
+Theme Name: My Original Theme
+Theme URI: 
+Author: Your Name
+Description: My original WordPress portfolio theme
+Version: 1.0
+*/
+
+/* サイト全体 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* ヘッダー */
+header {
+    background-color: #243447;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* メインコンテンツ */
+main {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* フッター */
+footer {
+    background-color: #243447;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 固定ページ専用のデザイン */
+.page-content {
+    background-color: #e8f0fe;
+}
+
+/* 投稿詳細ページ専用のデザイン */
+.single-content {
+    background-color: #fff;
+}
+
+/* 投稿日 */
+.post-date {
+    color: #888;
+    font-size: 14px;
+}
+
+/* 投稿詳細ページのリンク */
+.single-content a {
+    color: #243447;
+    text-decoration: none;
+}
+
+/* マウスを乗せたとき */
+.single-content a:hover {
+    text-decoration: underline;
+}
+
+/* ナビゲーションメニュー */
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+/* メニューのリンク */
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* マウスを乗せたとき */
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* 投稿一覧ページ */
+.post-list {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* 投稿一覧の見出し */
+.section-title {
+    color: #243447;
+    margin-bottom: 40px;
+}
+
+/* 投稿カード */
+.post-card {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* 投稿タイトル */
+.post-card h2 {
+    margin-top: 0;
+}
+
+.post-card h2 a {
+    color: #243447;
+    text-decoration: none;
+}
+
+.post-card h2 a:hover {
+    text-decoration: underline;
+}
+
+/* 続きを読むボタン */
+.read-more {
+    display: inline-block;
+    background-color: #243447;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* マウスを乗せたとき */
+.read-more:hover {
+    background-color: #40566d;
+}
+
+/* アイキャッチ画像 */
+.post-thumbnail {
+    margin-bottom: 20px;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* 投稿詳細ページのアイキャッチ画像 */
+.single-thumbnail {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.single-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+/* スマートフォン対応 */
+@media screen and (max-width: 767px) {
+
+    /* ヘッダー */
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    /* ナビゲーションメニュー */
+    .main-nav ul {
+        gap: 20px;
+    }
+
+    .main-nav a {
+        font-size: 14px;
+    }
+
+    /* 投稿一覧 */
+    .post-list {
+        padding: 40px 15px;
+    }
+
+    /* 投稿カード */
+    .post-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .post-card h2 {
+        font-size: 20px;
+    }
+
+    /* 投稿一覧のアイキャッチ画像 */
+    .post-thumbnail img {
+        height: 180px;
+    }
+
+    /* 投稿詳細ページ */
+    .single-content {
+        padding: 40px 15px;
+    }
+
+    .single-content h2 {
+        font-size: 22px;
+    }
+
+    /* 投稿詳細のアイキャッチ画像 */
+    .single-thumbnail {
+        margin: 20px auto;
+    }
+
+    /* フッター */
+    footer {
+        padding: 25px 15px;
+        font-size: 14px;
+    }
+}
+
+/* ヒーローセクション */
+.hero {
+    background-color: #e7eefb;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* ヒーローラベル */
+.hero-label {
+    color: #40566d;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+/* メインタイトル */
+.hero h2 {
+    color: #243447;
+    font-size: 56px;
+    margin: 0 0 20px;
+}
+
+/* キャッチコピー */
+.hero-subtitle {
+    color: #243447;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 説明文 */
+.hero-description {
+    color: #40566d;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* 自己紹介ボタン */
+.hero-button {
+    display: inline-block;
+    background-color: #243447;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* マウスを乗せたとき */
+.hero-button:hover {
+    background-color: #40566d;
+}
+
+/* ヒーローセクションのスマートフォン対応 */
+@media screen and (max-width: 767px) {
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero-label {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .hero-button {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+
+}
+
+/* 制作実績セクション */
+.works {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* 制作実績の見出し */
+.works .section-title {
+    color: #243447;
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+/* 日本語のサブタイトル */
+.works-subtitle {
+    color: #40566d;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* 制作実績の横並び */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 制作実績カード */
+.work-card {
+    background-color: #f4f6f8;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 制作実績の画像エリア */
+.work-image {
+    background-color: #e7eefb;
+    height: 220px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #243447;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 制作実績のタイトル */
+.work-card h3 {
+    color: #243447;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* 制作実績の説明文 */
+.work-card p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* 使用した技術 */
+.work-card .work-skills {
+    color: #40566d;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* 制作実績の画像 */
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* 制作実績セクションのスマートフォン対応 */
+@media screen and (max-width: 767px) {
+
+    .works {
+        padding: 50px 15px;
+    }
+
+    .works .section-title {
+        font-size: 28px;
+    }
+
+    .works-subtitle {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .work-card {
+        padding: 20px;
+    }
+
+    .work-image {
+        height: 180px;
+    }
+
+    .work-card h3 {
+        font-size: 20px;
+    }
+
+    .work-card p {
+        font-size: 14px;
+    }
+
+    .work-card .work-skills {
+        font-size: 12px;
+    }
+
+}
+
+/* スキル紹介セクション */
+.skills {
+    background-color: #e7eefb;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* スキル紹介の見出し */
+.skills .section-title {
+    color: #243447;
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+/* 日本語のサブタイトル */
+.skills-subtitle {
+    color: #40566d;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* スキルカードの横並び */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* スキルカード */
+.skill-card {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* スキル名 */
+.skill-card h3 {
+    color: #243447;
+    font-size: 22px;
+    margin: 0 0 15px;
+}
+
+/* スキルの説明文 */
+.skill-card p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* スキルのロゴ画像 */
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* スキル紹介セクションのスマートフォン対応 */
+@media screen and (max-width: 767px) {
+
+    .skills {
+        padding: 50px 15px;
+    }
+
+    .skills .section-title {
+        font-size: 28px;
+    }
+
+    .skills-subtitle {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .skill-card {
+        padding: 20px 15px;
+    }
+
+    .skill-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .skill-card p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .skill-icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 15px;
+    }
+
+}
+
+/* 自己紹介セクション */
+.about {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* 自己紹介の見出し */
+.about .section-title {
+    color: #243447;
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+/* 日本語のサブタイトル */
+.about-subtitle {
+    color: #40566d;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* 画像と自己紹介文の横並び */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* プロフィール画像 */
+.about-image {
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    background-color: #e7eefb;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #243447;
+    font-size: 24px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+/* 自己紹介文 */
+.about-text {
+    flex: 1.5;
+    min-width: 0;
+    text-align: left;
+}
+
+/* 自己紹介文の見出し */
+.about-text h3 {
+    color: #243447;
+    font-size: 26px;
+    margin: 0 0 20px;
+}
+
+/* 自己紹介文の段落 */
+.about-text p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* 自己紹介ページへのボタン */
+.about-button {
+    display: inline-block;
+    background-color: #243447;
+    color: #ffffff;
+    padding: 14px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+/* ボタンのホバー効果 */
+.about-button:hover {
+    background-color: #40566d;
+}
+
+/* プロフィール画像の表示 */
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 自己紹介セクションのスマートフォン対応 */
+@media screen and (max-width: 767px) {
+
+    .about {
+        padding: 50px 15px;
+    }
+
+    .about .section-title {
+        font-size: 28px;
+    }
+
+    .about-subtitle {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .about-text {
+        width: 100%;
+        text-align: left;
+    }
+
+    .about-text h3 {
+        font-size: 22px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about-button {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+}
+
+/* お問い合わせセクション */
+.contact {
+    background-color: #e7eefb;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* お問い合わせの見出し */
+.contact .section-title {
+    color: #243447;
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+/* 日本語のサブタイトル */
+.contact-subtitle {
+    color: #40566d;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* お問い合わせの内容 */
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* お問い合わせの小見出し */
+.contact-content h3 {
+    color: #243447;
+    font-size: 26px;
+    margin: 0 0 20px;
+}
+
+/* お問い合わせの説明文 */
+.contact-content p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 30px;
+}
+
+/* お問い合わせボタン */
+.contact-button {
+    display: inline-block;
+    background-color: #243447;
+    color: #ffffff;
+    padding: 16px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* ボタンのホバー効果 */
+.contact-button:hover {
+    background-color: #40566d;
+}
+
+/* お問い合わせセクションのスマートフォン対応 */
+@media screen and (max-width: 767px) {
+
+    .contact {
+        padding: 50px 15px;
+    }
+
+    .contact .section-title {
+        font-size: 28px;
+    }
+
+    .contact-subtitle {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .contact-content h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .contact-content p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+
+    .contact-button {
+        font-size: 14px;
+        padding: 14px 24px;
+    }
+
+}
+
+/* お問い合わせフォーム */
+.wpcf7 {
+    max-width: 640px;
+    margin: 40px auto 0;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* フォームの項目 */
+.wpcf7 form p {
+    margin: 0 0 24px;
+}
+
+.wpcf7 label {
+    display: block;
+    color: #243447;
+    font-weight: bold;
+}
+
+/* 入力欄 */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #f9fafb;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* メッセージ入力欄 */
+.wpcf7 textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+/* 入力欄を選択したとき */
+.wpcf7 input:focus,
+.wpcf7 textarea:focus {
+    outline: 2px solid #40566d;
+    outline-offset: 2px;
+}
+
+/* 送信ボタン */
+.wpcf7 input[type="submit"] {
+    display: block;
+    margin: 30px auto 0;
+    padding: 16px 50px;
+    background-color: #243447;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* 送信ボタンのホバー効果 */
+.wpcf7 input[type="submit"]:hover {
+    background-color: #40566d;
+}
+
+/* お問い合わせフォームのスマートフォン対応 */
+@media screen and (max-width: 767px) {
+    .wpcf7 {
+        padding: 24px 20px;
+        margin-top: 30px;
+    }
+
+    .wpcf7 input[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* お問い合わせフォームの必須マーク */
+.wpcf7 .required {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 3px 8px;
+    background-color: #243447;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: normal;
+}
+
+/* 入力例の文字色 */
+.wpcf7 input::placeholder,
+.wpcf7 textarea::placeholder {
+    color: #9ca3af;
+}
+
+/* ==============================
+   お問い合わせセクション
+============================== */
+
+.contact-section {
+    background-color: #e7edfa;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-subtitle {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #52677e;
+    margin-bottom: 12px;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    color: #243447;
+    margin-bottom: 24px;
+}
+
+.contact-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #52677e;
+    margin-bottom: 32px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 18px 36px;
+    background-color: #243447;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s,
+                transform 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #3b526b;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* スマートフォン対応 */
+@media screen and (max-width: 767px) {
+    .contact-section {
+        padding: 60px 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 26px;
+    }
+
+    .contact-description {
+        font-size: 14px;
+    }
+
+    .contact-button {
+        padding: 16px 24px;
+        font-size: 14px;
+    }
+}
