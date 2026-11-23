@@ -17,11 +17,22 @@
     <h1><?php bloginfo('name'); ?></h1>
     <p><?php bloginfo('description'); ?></p>
 
+    <button
+        class="menu-toggle"
+        type="button"
+        aria-controls="primary-menu"
+        aria-expanded="false"
+        aria-label="メニューを開く"
+    >
+        <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+    </button>
+
     <?php
     wp_nav_menu(array(
         'theme_location' => 'primary',
         'container' => 'nav',
         'container_class' => 'main-nav',
+        'container_id' => 'primary-menu',
     ));
     ?>
     

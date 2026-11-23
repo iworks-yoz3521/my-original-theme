@@ -951,3 +951,78 @@ footer {
         font-size: 14px;
     }
 }
+
+/* 画面幅360px以下のナビゲーション調整 */
+@media screen and (max-width: 360px) {
+
+    .main-nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .main-nav a {
+        font-size: 13px;
+    }
+}
+
+/* 画面幅360px以下のSkillsカード調整 */
+@media screen and (max-width: 360px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ========================================
+   ハンバーガーメニュー
+======================================== */
+
+/* パソコンではメニューボタンを非表示 */
+.menu-toggle {
+    display: none;
+}
+
+/* スマートフォン用 */
+@media screen and (max-width: 767px) {
+
+    /* メニューボタン */
+    .menu-toggle {
+        display: block;
+        margin: 20px auto 0;
+        padding: 10px 16px;
+        background-color: #ffffff;
+        color: #243447;
+        border: none;
+        border-radius: 6px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* 通常のナビゲーションを初期状態で非表示 */
+    .main-nav {
+        display: none;
+    }
+
+    /* メニューを開いたときに表示 */
+    .main-nav.is-open {
+        display: block;
+        margin-top: 15px;
+    }
+
+    /* メニュー項目を縦並びにする */
+    .main-nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    /* メニューのリンク */
+    .main-nav a {
+        display: block;
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+}
